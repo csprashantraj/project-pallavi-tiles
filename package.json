@@ -1,0 +1,46 @@
+{
+  "name": "project-pt",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "postbuild": "react-snap",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "reactSnap": {
+    "source": "dist",
+    "port": 45679,
+    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"],
+    "minifyHtml": {
+      "collapseWhitespace": false,
+      "removeComments": false
+    }
+  },
+  "dependencies": {
+    "framer-motion": "^12.34.5",
+    "lucide-react": "^0.576.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-helmet-async": "^3.0.0",
+    "react-router-dom": "^6.30.3",
+    "yet-another-react-lightbox": "^3.29.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^4.7.0",
+    "autoprefixer": "^10.4.27",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "postcss": "^8.5.8",
+    "react-snap": "^1.23.0",
+    "tailwindcss": "^3.4.19",
+    "vite": "^5.4.21"
+  }
+}
