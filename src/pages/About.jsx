@@ -38,7 +38,7 @@ export default function About() {
 
       {/* Story */}
       <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="w-full px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="fade-in-up">
             <p className="text-xs font-medium tracking-widest text-brand-gold uppercase mb-3">Our Founding</p>
             <h2 className="font-heading text-3xl font-bold text-brand-brown mb-5">
@@ -75,7 +75,7 @@ export default function About() {
 
       {/* Mission & Vision */}
       <section className="py-16 bg-brand-cream">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="fade-in-up bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
             <div className="w-10 h-10 rounded-full bg-brand-brown flex items-center justify-center mb-4">
               <span className="text-brand-beige font-bold text-lg">M</span>
@@ -103,7 +103,7 @@ export default function About() {
 
       {/* Core Values */}
       <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 fade-in-up">
             <p className="text-xs font-medium tracking-widest text-brand-gold uppercase mb-3">What Guides Us</p>
             <h2 className="font-heading text-3xl font-bold text-brand-brown">Our Core Values</h2>
@@ -124,7 +124,7 @@ export default function About() {
 
       {/* Team */}
       <section className="py-16 bg-brand-cream">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 fade-in-up">
             <p className="text-xs font-medium tracking-widest text-brand-gold uppercase mb-3">The People Behind It</p>
             <h2 className="font-heading text-3xl font-bold text-brand-brown">Meet Our Team</h2>

@@ -49,7 +49,7 @@ export default function Products() {
 
       {/* Sticky tabs */}
       <div className="sticky top-16 z-30 bg-white border-b border-gray-200 shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex overflow-x-auto no-scrollbar gap-1 py-2">
+        <div className="w-full px-4 sm:px-6 lg:px-8 flex overflow-x-auto no-scrollbar gap-1 py-2">
           {TABS.map((tab) => (
             <button
               key={tab.id}
@@ -69,7 +69,7 @@ export default function Products() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-20">
+      <div className="w-full px-4 sm:px-6 lg:px-8 py-12 space-y-20">
         {/* ── Granite ── */}
         <section id="granite">
           <SectionHeader title="Granite" subtitle="Sourced from South India and Rajasthan" />

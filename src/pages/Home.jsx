@@ -71,7 +71,7 @@ export default function Home() {
 
       {/* Business intro */}
       <section className="bg-brand-cream py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="w-full px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-xs font-medium tracking-widest text-brand-gold uppercase mb-3">Who We Are</p>
           <h2 className="font-heading text-3xl sm:text-4xl font-bold text-brand-brown mb-5">
             A Family Business Built on Trust
@@ -90,7 +90,7 @@ export default function Home() {
 
       {/* Product Categories */}
       <section className="py-16 bg-white" ref={sectionRef}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 fade-in-up">
             <p className="text-xs font-medium tracking-widest text-brand-gold uppercase mb-3">What We Offer</p>
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-brand-brown">
@@ -117,7 +117,7 @@ export default function Home() {
 
       {/* Why Choose Us */}
       <section className="py-16 bg-brand-cream">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 fade-in-up">
             <p className="text-xs font-medium tracking-widest text-brand-gold uppercase mb-3">Our Promise</p>
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-brand-brown">
@@ -143,7 +143,7 @@ export default function Home() {
 
       {/* Testimonials */}
       <section className="py-16 bg-brand-cream">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 fade-in-up">
             <p className="text-xs font-medium tracking-widest text-brand-gold uppercase mb-3">Reviews</p>
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-brand-brown">

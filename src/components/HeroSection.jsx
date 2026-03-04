@@ -32,7 +32,7 @@ export default function HeroSection() {
         >
           <span className="w-2 h-2 rounded-full bg-brand-gold animate-pulse" />
           <span className="text-sm text-white/90 font-medium">
-            Authorised Dealer — Kajaria · Astral · Kervit
+            Authorised Dealer — Kajaria · Astral · Kerovit
           </span>
         </motion.div>
 
@@ -58,7 +58,7 @@ export default function HeroSection() {
           className="text-white/80 text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed"
         >
           Your one-stop destination for premium Granite, Kajaria Tiles,
-          Kervit Sanitaryware &amp; Faucets, and Astral Pipe Fittings.
+          Kerovit Sanitaryware &amp; Faucets, and Astral Pipe Fittings.
           Serving the region with pride since 2000.
         </motion.p>
 

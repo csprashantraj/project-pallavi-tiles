@@ -41,7 +41,7 @@ export default function Gallery() {
         <p className="text-white/70 max-w-xl mx-auto">A glimpse of our products and completed installations.</p>
       </div>
 
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <section className="w-full px-4 sm:px-6 lg:px-8 py-12">
         {/* Filter buttons */}
         <div className="flex flex-wrap gap-3 justify-center mb-10">
           {CATEGORIES.map((cat) => (

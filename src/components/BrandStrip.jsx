@@ -7,7 +7,7 @@ import brands from '../data/brands'
 export default function BrandStrip() {
   return (
     <section className="bg-white border-y border-gray-100 py-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-6 lg:px-8">
         <p className="text-center text-xs text-gray-400 uppercase tracking-widest mb-6 font-medium">
           Our Authorised Brand Partners
         </p>

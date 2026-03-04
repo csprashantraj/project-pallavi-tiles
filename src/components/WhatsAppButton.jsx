@@ -3,9 +3,9 @@
  * Fixed floating WhatsApp button — bottom right, above BackToTop.
  * Replace WHATSAPP_NUMBER with the real business number.
  */
-const WHATSAPP_NUMBER = '919876543210' // Format: country code + number, no +
+const WHATSAPP_NUMBER = '917765906345' // Format: country code + number, no +
 const WHATSAPP_MESSAGE = encodeURIComponent(
-  'Hello! I am interested in your building materials. Please share more details.'
+  'Hello! I am interested in your products. Please share more details.'
 )
 
 export default function WhatsAppButton() {

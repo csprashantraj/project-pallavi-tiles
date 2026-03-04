@@ -62,7 +62,7 @@ export default function WhyChooseUs() {
 
       {/* Credentials */}
       <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 fade-in-up">
             <p className="text-xs font-medium tracking-widest text-brand-gold uppercase mb-3">Our Credentials</p>
             <h2 className="font-heading text-3xl font-bold text-brand-brown">Authorised Dealerships</h2>
@@ -81,7 +81,7 @@ export default function WhyChooseUs() {
 
       {/* Quality & Range */}
       <section className="py-16 bg-brand-cream">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="w-full px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="fade-in-up">
             <CheckCircle size={32} className="text-brand-gold mb-4" />
             <h2 className="font-heading text-2xl font-bold text-brand-brown mb-4">Quality Assurance</h2>
@@ -114,7 +114,7 @@ export default function WhyChooseUs() {
 
       {/* Customer First */}
       <section className="py-16 bg-brand-cream">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="w-full px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="fade-in-up">
             <img
               src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=700&h=500&fit=crop"

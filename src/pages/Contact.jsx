@@ -8,7 +8,7 @@ import SEOHead from '../components/SEOHead'
 const PRODUCT_OPTIONS = [
   'Granite',
   'Kajaria Tiles',
-  'Kervit Sanitaryware & Faucets',
+  'Kerovit Sanitaryware & Faucets',
   'Astral Pipe Fittings',
   'Multiple Products',
   'Other',
@@ -64,7 +64,7 @@ export default function Contact() {
         <p className="text-white/70 max-w-xl mx-auto">We'd love to hear from you. Visit us, call us, or drop a message.</p>
       </div>
 
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <section className="w-full px-4 sm:px-6 lg:px-8 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12">
         {/* Left: Info */}
         <div className="space-y-8">
           <div>
@@ -74,23 +74,23 @@ export default function Contact() {
                 <MapPin size={20} className="text-brand-gold shrink-0 mt-0.5" />
                 <div>
                   <p className="font-semibold text-brand-dark text-sm">Address</p>
-                  <p className="text-gray-600 text-sm">123 Main Market Road, Near City Centre,<br />Ahmedabad – 380001, Gujarat, India</p>
+                  <p className="text-gray-600 text-sm">Near Bazar Samiti Gate, Main Road,<br />Sitamarhi – 843302, Bihar, India</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <Phone size={20} className="text-brand-gold shrink-0 mt-0.5" />
                 <div>
                   <p className="font-semibold text-brand-dark text-sm">Phone</p>
-                  <a href="tel:+919876543210" className="text-gray-600 text-sm hover:text-brand-gold">+91 98765 43210</a><br />
-                  <a href="tel:+919876543211" className="text-gray-600 text-sm hover:text-brand-gold">+91 98765 43211</a>
+                  <a href="tel:+917765906345" className="text-gray-600 text-sm hover:text-brand-gold">+91 77659 06345</a><br />
+                  <a href="tel:+919931554943" className="text-gray-600 text-sm hover:text-brand-gold">+91 99315 54943</a>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <Mail size={20} className="text-brand-gold shrink-0 mt-0.5" />
                 <div>
                   <p className="font-semibold text-brand-dark text-sm">Email</p>
-                  <a href="mailto:info@patelbuildingmaterials.com" className="text-gray-600 text-sm hover:text-brand-gold break-all">
-                    info@patelbuildingmaterials.com
+                  <a href="mailto:pallavitiles19@gmail.com" className="text-gray-600 text-sm hover:text-brand-gold break-all">
+                    pallavitiles19@gmail.com
                   </a>
                 </div>
               </li>
@@ -98,8 +98,8 @@ export default function Contact() {
                 <Clock size={20} className="text-brand-gold shrink-0 mt-0.5" />
                 <div>
                   <p className="font-semibold text-brand-dark text-sm">Business Hours</p>
-                  <p className="text-gray-600 text-sm">Monday – Saturday: 9:00 AM – 7:00 PM</p>
-                  <p className="text-gray-600 text-sm">Sunday: 10:00 AM – 4:00 PM</p>
+                  <p className="text-gray-600 text-sm">Sunday – Friday: 10:00 AM – 7:00 PM</p>
+                  <p className="text-gray-600 text-sm">Saturday: 10:00 AM – 5:00 PM</p>
                 </div>
               </li>
             </ul>
@@ -107,7 +107,7 @@ export default function Contact() {
 
           {/* WhatsApp */}
           <a
-            href="https://wa.me/919876543210?text=Hello!%20I%20am%20interested%20in%20your%20products."
+            href="https://wa.me/917765906345?text=Hello!%20I%20am%20interested%20in%20your%20products."
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white font-semibold px-5 py-3 rounded-full w-fit transition-colors shadow-md"
@@ -116,13 +116,18 @@ export default function Contact() {
             Chat on WhatsApp
           </a>
 
-          {/* Map placeholder */}
-          <div className="rounded-2xl overflow-hidden shadow-sm border border-gray-200 h-64 bg-gray-100 flex items-center justify-center">
-            {/* Replace src with real Google Maps embed URL */}
-            <p className="text-gray-400 text-sm text-center px-4">
-              📍 Google Maps embed<br />
-              <span className="text-xs">(Replace with real embed URL in production)</span>
-            </p>
+          {/* Google Maps Embed */}
+          <div className="rounded-2xl overflow-hidden shadow-sm border border-gray-200">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238.28825819785553!2d85.51164776754601!3d26.596391137830132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ecf13029b006e9%3A0x8ba3781c8080217b!2sPallavi%20Tiles!5e0!3m2!1sen!2sin!4v1772650649570!5m2!1sen!2sin"
+              width="100%"
+              height="256"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Pallavi Tiles Location"
+            />
           </div>
         </div>
 
