@@ -26,21 +26,21 @@ export default function Footer() {
   return (
     <footer className="bg-brand-brown text-white">
       {/* Main Footer */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="w-full px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Brand */}
         <div>
           <div className="flex items-center gap-2 mb-4">
             <div className="w-10 h-10 rounded-full bg-brand-beige flex items-center justify-center">
-              <span className="text-brand-brown font-heading font-bold text-sm">PB</span>
+              <span className="text-brand-brown font-heading font-bold text-sm">PV</span>
             </div>
             <div className="leading-tight">
-              <p className="font-heading font-bold text-lg leading-4">Patel</p>
-              <p className="text-xs text-brand-beige tracking-wide">Building Materials</p>
+              <p className="font-heading font-bold text-lg leading-4">Pallavi</p>
+              <p className="text-xs text-brand-beige tracking-wide">Tiles</p>
             </div>
           </div>
           <p className="text-gray-300 text-sm leading-relaxed mb-4">
-            Your trusted family-owned building materials shop since 2000.
-            Authorised dealers for Kajaria, Astral, and Kervit.
+            Your trusted tiles, granites and pipe fittings shop since 2013.
+            Authorised dealers for Kajaria, Astral, and Kerovit.
           </p>
           {/* Social */}
           <div className="flex gap-3">
@@ -101,23 +101,23 @@ export default function Footer() {
           <ul className="space-y-3">
             <li className="flex items-start gap-2 text-sm text-gray-300">
               <MapPin size={15} className="mt-0.5 shrink-0 text-brand-beige" />
-              <span>123 Main Market Road, Near City Centre,<br />Ahmedabad – 380001, Gujarat</span>
+              <span>Near Bazar Samiti Gate, Main Road<br />Sitamarhi – 843302, Bihar</span>
             </li>
             <li className="flex items-center gap-2 text-sm text-gray-300">
               <Phone size={15} className="shrink-0 text-brand-beige" />
-              <a href="tel:+919876543210" className="hover:text-brand-beige transition-colors">
-                +91 98765 43210
+              <a href="tel:+917765906345" className="hover:text-brand-beige transition-colors">
+                +91 77659 06345
               </a>
             </li>
             <li className="flex items-center gap-2 text-sm text-gray-300">
               <Mail size={15} className="shrink-0 text-brand-beige" />
-              <a href="mailto:info@patelbuildingmaterials.com" className="hover:text-brand-beige transition-colors break-all">
-                info@patelbuildingmaterials.com
+              <a href="mailto:pallavitiles19@gmail.com" className="hover:text-brand-beige transition-colors break-all">
+                pallavitiles19@gmail.com
               </a>
             </li>
             <li className="flex items-start gap-2 text-sm text-gray-300">
               <Clock size={15} className="mt-0.5 shrink-0 text-brand-beige" />
-              <span>Mon–Sat: 9AM–7PM<br />Sun: 10AM–4PM</span>
+              <span>Sun–Fri: 10AM–7PM<br />Sat: 10AM–5PM</span>
             </li>
           </ul>
         </div>
@@ -125,11 +125,11 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-400">
-          <p>© {new Date().getFullYear()} Patel Building Materials. All rights reserved.</p>
+        <div className="w-full px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-400">
+          <p>© {new Date().getFullYear()} Pallavi Tiles. All rights reserved.</p>
           <p>
             Authorised dealer of{' '}
-            <span className="text-brand-beige">Kajaria · Astral · Kervit</span>
+            <span className="text-brand-beige">Kajaria · Astral · Kerovit</span>
           </p>
         </div>
       </div>

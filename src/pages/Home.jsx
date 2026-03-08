@@ -31,7 +31,7 @@ const productCategories = [
   {
     Icon: Droplets,
     title: 'Sanitaryware & Faucets',
-    desc: 'Kervit branded wash basins, toilet sets, faucets, and shower panels for bathrooms of every style.',
+    desc: 'Kerovit branded wash basins, toilet sets, faucets, and shower panels for bathrooms of every style.',
     href: '/products#sanitaryware',
     color: 'bg-sky-50',
     iconColor: 'text-sky-600',
@@ -39,7 +39,7 @@ const productCategories = [
   {
     Icon: Pipe,
     title: 'Pipe Fittings',
-    desc: 'Authorised Astral Pipes distributor — CPVC, UPVC, and SWR pipes for all plumbing applications.',
+    desc: 'Authorised Astral Pipes distributor — cPVC, uPVC, and SWR pipes for all plumbing applications.',
     href: '/products#pipes',
     color: 'bg-teal-50',
     iconColor: 'text-teal-600',
@@ -47,7 +47,7 @@ const productCategories = [
 ]
 
 const whyPoints = [
-  { Icon: Award, title: 'Prime Dealership', desc: 'We hold official dealerships and distributorships for Kajaria, Astral, and Kervit — guaranteeing genuine products.' },
+  { Icon: Award, title: 'Prime Dealership', desc: 'We hold official dealerships and distributorships for Kajaria, Astral, and Kerovit — guaranteeing genuine products.' },
   { Icon: Package, title: 'Wide Product Range', desc: 'Over 2,000 SKUs across granite, tiles, sanitaryware, and pipes all under one roof.' },
   { Icon: ShieldCheck, title: 'Trusted Brands', desc: "Every product is sourced from India's most reputed building material manufacturers." },
   { Icon: Users, title: 'Customer First', desc: 'Our experienced team provides personalised guidance from selection to installation.' },
@@ -60,10 +60,10 @@ export default function Home() {
     <>
       <SEOHead
         title="Home"
-        description="Patel Building Materials — your authorised dealer for Kajaria Tiles, Astral Pipes, Kervit Sanitaryware, and premium Granite in Ahmedabad, Gujarat."
-        keywords="building materials, granite, kajaria tiles, astral pipes, kervit sanitaryware, Ahmedabad"
-        ogTitle="Patel Building Materials | Granite · Tiles · Sanitaryware · Pipes"
-        ogDescription="One-stop shop for premium building materials in Ahmedabad. Authorised dealer for Kajaria, Astral & Kervit."
+        description="Pallavi Tiles — your authorised dealer for Kajaria Tiles, Astral Pipes, Kerovit Sanitaryware, and premium Granite in Sitamarhi, Bihar."
+        keywords="building materials, granite, kajaria tiles, astral pipes, kerovit sanitaryware, Sitamarhi, Bihar"
+        ogTitle="Pallavi Tiles | Granite · Tiles · Sanitaryware · Pipes"
+        ogDescription="One-stop shop for premium building materials in Sitamarhi, Bihar. Authorised dealer for Kajaria, Astral & Kerovit."
       />
 
       {/* Hero */}
@@ -71,14 +71,14 @@ export default function Home() {
 
       {/* Business intro */}
       <section className="bg-brand-cream py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="w-full px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-xs font-medium tracking-widest text-brand-gold uppercase mb-3">Who We Are</p>
           <h2 className="font-heading text-3xl sm:text-4xl font-bold text-brand-brown mb-5">
-            A Family Business Built on Trust
+            A Business Built on Trust
           </h2>
           <p className="text-gray-600 text-lg leading-relaxed">
-            Patel Building Materials has been serving homeowners, architects, and contractors in
-            Gujarat since 2000. As a family-owned business, we combine the warmth of personal service
+            Pallavi Tiles has been serving homeowners, architects, and contractors in
+            Sitamarhi, Bihar since 2013. As a business, we combine the warmth of personal service
             with the depth of a fully stocked showroom. From granite slabs to pipe fittings, we are
             your single-stop solution for every building need.
           </p>
@@ -90,7 +90,7 @@ export default function Home() {
 
       {/* Product Categories */}
       <section className="py-16 bg-white" ref={sectionRef}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 fade-in-up">
             <p className="text-xs font-medium tracking-widest text-brand-gold uppercase mb-3">What We Offer</p>
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-brand-brown">
@@ -117,7 +117,7 @@ export default function Home() {
 
       {/* Why Choose Us */}
       <section className="py-16 bg-brand-cream">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 fade-in-up">
             <p className="text-xs font-medium tracking-widest text-brand-gold uppercase mb-3">Our Promise</p>
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-brand-brown">
@@ -143,7 +143,7 @@ export default function Home() {
 
       {/* Testimonials */}
       <section className="py-16 bg-brand-cream">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 fade-in-up">
             <p className="text-xs font-medium tracking-widest text-brand-gold uppercase mb-3">Reviews</p>
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-brand-brown">

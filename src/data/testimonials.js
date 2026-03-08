@@ -6,39 +6,39 @@
 const testimonials = [
   {
     id: 1,
-    name: 'Ramesh Patel',
-    location: 'Ahmedabad, Gujarat',
+    name: 'Aditya Raj',
+    location: 'Sitamarhi, Bihar',
     rating: 5,
     review:
-      'Excellent quality granite at very fair prices. The team helped us choose the perfect slab for our kitchen countertop. Highly recommended!',
-    avatar: 'RP',
+      `I would like to express my appreciation for the excellent service provided by Pallavi Tiles. The owner's behavior is commendable, and the staff is known for their good nature and behavior. It's reassuring to know that if any issues arise with the tiles, prompt action is taken, showcasing a high level of professionalism. The owner has proven to be a very supportive person, making the overall experience with Pallavi Tiles highly satisfactory.`,
+    avatar: 'AR',
   },
   {
     id: 2,
-    name: 'Sunita Sharma',
-    location: 'Jaipur, Rajasthan',
+    name: 'Abhishek Raj',
+    location: 'Sitamarhi, Bihar',
     rating: 5,
     review:
-      'We renovated our entire bathroom with Kervit sanitaryware from here. The product quality is outstanding and the installation advice was spot on.',
-    avatar: 'SS',
+      `All types of files are available here.... Good behavior`,
+    avatar: 'AR',
   },
   {
     id: 3,
-    name: 'Arjun Mehta',
-    location: 'Surat, Gujarat',
+    name: 'Sanjeev Ranjan',
+    location: 'Sitamarhi, Bihar',
     rating: 4,
     review:
-      'Best place for Kajaria tiles in the region. Wide selection, prime dealership stock, and the staff is very knowledgeable. Will definitely return.',
-    avatar: 'AM',
+      `Good Quality Tiles and compromised rates.`,
+    avatar: 'SR',
   },
   {
     id: 4,
-    name: 'Priya Nair',
-    location: 'Bengaluru, Karnataka',
+    name: 'Raushan Kumar',
+    location: 'Bihar',
     rating: 5,
     review:
-      'Got all our Astral pipe fittings for a large housing project from here. Bulk pricing was competitive and delivery was on time.',
-    avatar: 'PN',
+      `Good tiles and granite shop in SITAMARHI and authorised deal at of kajaria tiles and kerovit sanitaryware and feucet`,
+    avatar: 'RK',
   },
 ]
 

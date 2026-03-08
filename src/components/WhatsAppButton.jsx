@@ -3,9 +3,9 @@
  * Fixed floating WhatsApp button — bottom right, above BackToTop.
  * Replace WHATSAPP_NUMBER with the real business number.
  */
-const WHATSAPP_NUMBER = '919876543210' // Format: country code + number, no +
+const WHATSAPP_NUMBER = '+917765906345' // Format: country code + number, no +
 const WHATSAPP_MESSAGE = encodeURIComponent(
-  'Hello! I am interested in your building materials. Please share more details.'
+  'Hello! I am interested in your products. Please share more details.'
 )
 
 export default function WhatsAppButton() {
@@ -15,7 +15,7 @@ export default function WhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat on WhatsApp"
-      className="fixed bottom-20 right-5 z-50 w-13 h-13 rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-transform duration-200"
+      className="fixed bottom-28 right-5 z-50 w-13 h-13 rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-transform duration-200"
       style={{ width: '52px', height: '52px', backgroundColor: '#25D366' }}
     >
       {/* WhatsApp SVG icon */}

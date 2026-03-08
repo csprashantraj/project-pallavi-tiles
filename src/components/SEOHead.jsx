@@ -5,7 +5,7 @@
  */
 import { Helmet } from 'react-helmet-async'
 
-const SITE_NAME = 'Patel Building Materials'
+const SITE_NAME = 'Pallavi Tiles'
 const DEFAULT_OG_IMAGE = '/og-image.jpg'
 
 export default function SEOHead({

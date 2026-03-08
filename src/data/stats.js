@@ -7,14 +7,14 @@
 const stats = [
   {
     id: 1,
-    value: 25,
+    value: 13,
     suffix: '+',
     label: 'Years in Business',
-    description: 'Serving the region since 2000',
+    description: 'Serving the region since 2013',
   },
   {
     id: 2,
-    value: 5000,
+    value: 1000,
     suffix: '+',
     label: 'Happy Customers',
     description: 'Residential & commercial clients',
@@ -31,7 +31,7 @@ const stats = [
     value: 3,
     suffix: '',
     label: 'Brand Partners',
-    description: 'Kajaria · Astral · Kervit',
+    description: 'Kajaria · Astral · Kerovit',
   },
 ]
 

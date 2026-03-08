@@ -50,7 +50,7 @@ export default function StatsSection({ light = false }) {
 
   return (
     <section className={`${bg} py-16`}>
-      <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 lg:grid-cols-4 gap-8 divide-y sm:divide-y-0 sm:divide-x ${divider}`}>
+      <div className={`w-full px-4 sm:px-6 lg:px-8 grid grid-cols-2 lg:grid-cols-4 gap-8 divide-y sm:divide-y-0 sm:divide-x ${divider}`}>
         {stats.map((s) => (
           <div key={s.id} className="text-center py-4 sm:py-0 sm:px-6">
             <p className={`font-heading font-bold text-4xl lg:text-5xl ${textSub}`}>

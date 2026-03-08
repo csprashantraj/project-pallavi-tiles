@@ -3,59 +3,63 @@
  * All product data as static arrays, grouped by category.
  * Replace placeholder images and descriptions with real content.
  */
+import astralCpvcImage from '../assets/images/products/astral-cpvc-pipes.png'
+import astralUpvcImage from '../assets/images/products/astral-upvc-pipes.png'
+import astralSwrImage from '../assets/images/products/astral-swr-pipes.png'
+import kerovitBasinImage from '../assets/images/products/kerovit-basin.png'
+import kerovitToiletImage from '../assets/images/products/kerovit-one-piece.png'
+import kerovitFaucetImage from '../assets/images/products/kerovit-faucet.png'
+import kerovitShowerPanelImage from '../assets/images/products/kerovit-shower.png'
+import kajariaWhiteTileImage from '../assets/images/products/kajaria-white-floor-tiles.png'
+import kajariaParkingTileImage from '../assets/images/products/kajaria-parking-tiles.png'
+import kajariaKitchenTileImage from '../assets/images/products/kajaria-kitchen-wall-tiles.png'
+import kajariaExteriorTileImage from '../assets/images/products/kajaria-exterior-tiles.png'
+import kajariaBathroomTileImage from '../assets/images/products/kajaria-bathroom-wall-tiles.png'
+import kajariaFloorTileImage from '../assets/images/products/kajaria-floor-tiles.png'
+import southIndianGraniteImage1 from '../assets/images/products/south-india-granite-1.png'
+import southIndianGraniteImage3 from '../assets/images/products/south-india-granite-3.png'
+import rajasthanGraniteImage1 from '../assets/images/products/rajasthan-granite-1.png'
+import rajasthanGraniteImage2 from '../assets/images/products/rajasthan-granite-2.png'
+import rajasthanGraniteImage3 from '../assets/images/products/rajasthan-granite-3.png'  
 
 export const graniteProducts = {
   southIndian: [
     {
       id: 'si-1',
-      name: 'Black Galaxy',
-      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop',
-      finish: 'Polished',
+      name: 'Grey Granite',
+      image: southIndianGraniteImage1,
+      finish: '',
       origin: 'Andhra Pradesh',
     },
     {
       id: 'si-2',
-      name: 'Absolute Black',
-      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop',
-      finish: 'Polished / Leather',
-      origin: 'Karnataka',
-    },
-    {
-      id: 'si-3',
-      name: 'Colonial White',
-      image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=400&h=300&fit=crop',
-      finish: 'Polished',
-      origin: 'Tamil Nadu',
-    },
-    {
-      id: 'si-4',
-      name: 'Steel Grey',
-      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop',
-      finish: 'Polished / Flamed',
+      name: 'Dark Grey Granite',
+      image: southIndianGraniteImage3,
+      finish: '',
       origin: 'Andhra Pradesh',
     },
   ],
   rajasthani: [
     {
       id: 'rj-1',
-      name: 'Jodhpur Pink',
-      image: 'https://images.unsplash.com/photo-1551524559-8af4e6624178?w=400&h=300&fit=crop',
-      finish: 'Sanded',
-      origin: 'Jodhpur, Rajasthan',
+      name: 'Dark Black Granite',
+      image: rajasthanGraniteImage1,
+      finish: '',
+      origin: 'Rajasthan',
     },
     {
       id: 'rj-2',
-      name: 'Jaisalmer Yellow',
-      image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=400&h=300&fit=crop',
-      finish: 'Natural',
-      origin: 'Jaisalmer, Rajasthan',
+      name: 'Grey Granite',
+      image: rajasthanGraniteImage2,
+      finish: '',
+      origin: 'Rajasthan',
     },
     {
       id: 'rj-3',
-      name: 'Dholpur Beige',
-      image: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=400&h=300&fit=crop',
-      finish: 'Natural / Sanded',
-      origin: 'Dholpur, Rajasthan',
+      name: 'Wavy Black Granite',
+      image: rajasthanGraniteImage3,
+      finish: '',
+      origin: 'Rajasthan',
     },
   ],
 }
@@ -63,19 +67,19 @@ export const graniteProducts = {
 export const tilesProducts = [
   {
     id: 't-1',
-    name: 'Wooden Oak Floor Tile',
+    name: 'White Marble Floor Tiles',
     category: 'Floor Tiles',
-    size: '600×600 mm',
-    finish: 'Matt',
-    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=400&h=300&fit=crop',
+    size: '1200×600 mm',
+    finish: 'HD Ceramic',
+    image: kajariaWhiteTileImage,
   },
   {
     id: 't-2',
-    name: 'Marble Finish Wall Tile',
+    name: 'Kitchen Wall Tiles',
     category: 'Wall Tiles',
-    size: '300×600 mm',
-    finish: 'Glossy',
-    image: 'https://images.unsplash.com/photo-1571741140674-8949ca7df2a7?w=400&h=300&fit=crop',
+    size: '300×450 mm',
+    finish: 'Glossy Ceramic',
+    image: kajariaKitchenTileImage,
   },
   {
     id: 't-3',
@@ -83,61 +87,61 @@ export const tilesProducts = [
     category: 'Parking Tiles',
     size: '400×400 mm',
     finish: 'Anti-skid',
-    image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=400&h=300&fit=crop',
+    image: kajariaParkingTileImage,
   },
   {
     id: 't-4',
-    name: 'Double Charge Vitrified',
-    category: 'Vitrified Tiles',
-    size: '800×800 mm',
-    finish: 'High Gloss',
-    image: 'https://images.unsplash.com/photo-1562183241-b937e95585b6?w=400&h=300&fit=crop',
+    name: 'Exterior Cladding Tile',
+    category: 'Exterior Tiles',
+    size: 'tbd',
+    finish: 'Textured',
+    image: kajariaExteriorTileImage,
   },
   {
     id: 't-5',
-    name: 'Subway Wall Tile',
+    name: 'Bathroom Wall Tiles',
     category: 'Wall Tiles',
-    size: '200×400 mm',
-    finish: 'Glossy',
-    image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=400&h=300&fit=crop',
+    size: '300×450 mm',
+    finish: 'HD Ceramic',
+    image: kajariaBathroomTileImage,
   },
   {
     id: 't-6',
-    name: 'Rustic Floor Tile',
+    name: 'Bathroom Floor Tiles',
     category: 'Floor Tiles',
     size: '600×1200 mm',
-    finish: 'Matt',
-    image: 'https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=400&h=300&fit=crop',
+    finish: 'HD Ceramic',
+    image: kajariaFloorTileImage
   },
 ]
 
 export const sanitarywareProducts = [
   {
     id: 'sw-1',
-    name: 'Premium Wall-Hung Basin',
+    name: 'Table Top Basin',
     category: 'Wash Basins',
-    image: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=400&h=300&fit=crop',
+    image: kerovitBasinImage,
     description: 'Sleek ceramic basin with vitreous enamel finish.',
   },
   {
     id: 'sw-2',
-    name: 'One-Piece Toilet Suite',
+    name: 'One-Piece Toilet',
     category: 'Toilet Sets',
-    image: 'https://images.unsplash.com/photo-1584622781564-1d987f7333c1?w=400&h=300&fit=crop',
+    image: kerovitToiletImage,
     description: 'Water-saving dual flush 4/6-litre system.',
   },
   {
     id: 'sw-3',
-    name: 'Single-Lever Basin Faucet',
+    name: 'Single Lever Faucet',
     category: 'Faucets',
-    image: 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400&h=300&fit=crop',
+    image: kerovitFaucetImage,
     description: 'Brass body with chrome finish, ceramic cartridge.',
   },
   {
     id: 'sw-4',
     name: 'Rain Shower Panel',
     category: 'Shower Panels',
-    image: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=400&h=300&fit=crop',
+    image: kerovitShowerPanelImage,
     description: 'Stainless steel multi-function shower panel.',
   },
 ]
@@ -147,7 +151,7 @@ export const pipeFittingsProducts = [
     id: 'pf-1',
     name: 'CPVC Hot & Cold Pipe',
     category: 'CPVC Pipes',
-    image: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&h=300&fit=crop',
+    image: astralCpvcImage,
     sizes: '15mm – 100mm',
     description: 'FlowGuard Gold® CPVC — ideal for hot and cold plumbing.',
   },
@@ -155,7 +159,7 @@ export const pipeFittingsProducts = [
     id: 'pf-2',
     name: 'UPVC Pressure Pipe',
     category: 'UPVC Pipes',
-    image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400&h=300&fit=crop',
+    image: astralUpvcImage,
     sizes: '20mm – 160mm',
     description: 'High-pressure UPVC for underground and agriculture use.',
   },
@@ -163,7 +167,7 @@ export const pipeFittingsProducts = [
     id: 'pf-3',
     name: 'SWR Column Pipe',
     category: 'SWR Pipes',
-    image: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&h=300&fit=crop',
+    image: astralSwrImage,
     sizes: '75mm – 200mm',
     description: 'Soil, waste & rain-water drainage solutions.',
   },

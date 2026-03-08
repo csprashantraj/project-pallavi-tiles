@@ -21,7 +21,7 @@ export default function Offers() {
         title="Offers & New Arrivals"
         description="Discover the latest deals and new stock arrivals at Patel Building Materials — granite, Kajaria tiles, Kervit sanitaryware, and Astral pipes."
         keywords="offers, deals, new arrivals, building materials sale, kajaria sale, granite offer"
-        ogTitle="Offers & New Arrivals | Patel Building Materials"
+        ogTitle="Offers & New Arrivals | Pallavi Tiles"
         ogDescription="Latest deals and new stock across all building material categories."
       />
 
@@ -32,7 +32,7 @@ export default function Offers() {
         <p className="text-white/70 max-w-xl mx-auto">Hot deals, new stock, and limited-time offers — updated regularly.</p>
       </div>
 
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <section className="w-full px-4 sm:px-6 lg:px-8 py-12">
         {/* Filters */}
         <div className="flex flex-wrap gap-3 justify-center mb-10">
           {FILTER_CATS.map((cat) => (
