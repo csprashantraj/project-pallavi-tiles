@@ -1,9 +1,12 @@
 {
+  "homepage": "https://csprashantraj.github.io/project-pallavi-tiles",
   "name": "project-pt",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "postbuild": "react-snap",
@@ -13,7 +16,10 @@
   "reactSnap": {
     "source": "dist",
     "port": 45679,
-    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"],
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ],
     "minifyHtml": {
       "collapseWhitespace": false,
       "removeComments": false
@@ -37,6 +43,7 @@
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
+    "gh-pages": "^6.3.0",
     "globals": "^16.5.0",
     "postcss": "^8.5.8",
     "react-snap": "^1.23.0",
