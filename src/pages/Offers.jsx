@@ -21,7 +21,7 @@ export default function Offers() {
         title="Offers & New Arrivals"
         description="Discover the latest deals and new stock arrivals at Patel Building Materials — granite, Kajaria tiles, Kervit sanitaryware, and Astral pipes."
         keywords="offers, deals, new arrivals, building materials sale, kajaria sale, granite offer"
-        ogTitle="Offers & New Arrivals | Patel Building Materials"
+        ogTitle="Offers & New Arrivals | Pallavi Tiles"
         ogDescription="Latest deals and new stock across all building material categories."
       />
 

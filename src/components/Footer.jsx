@@ -39,7 +39,7 @@ export default function Footer() {
             </div>
           </div>
           <p className="text-gray-300 text-sm leading-relaxed mb-4">
-            Your trusted tiles, granites and pipe fittings shop since 2000.
+            Your trusted tiles, granites and pipe fittings shop since 2013.
             Authorised dealers for Kajaria, Astral, and Kerovit.
           </p>
           {/* Social */}

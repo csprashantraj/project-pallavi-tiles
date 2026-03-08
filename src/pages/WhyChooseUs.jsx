@@ -9,7 +9,7 @@ import brands from '../data/brands'
 const credentials = [
   {
     title: 'Kajaria Prime Dealership',
-    body: "We are an authorised Kajaria Prime Dealer — meaning we have direct access to Kajaria's full product catalogue, factory pricing, and latest collections before they reach the open market.",
+    body: "We are an authorised Kajaria Prime Dealer — meaning we have direct access to Kajaria's full product catalogue, best pricing, and latest collections before they reach the open market.",
     color: '#C8102E',
   },
   {
@@ -18,8 +18,8 @@ const credentials = [
     color: '#1B4F9B',
   },
   {
-    title: 'Kervit Authorised Dealer',
-    body: 'Our Kervit dealership guarantees genuine sanitaryware and faucets with manufacturer warranty, installation support, and access to the complete product range.',
+    title: 'Kerovit Authorised Dealer',
+    body: 'Our Kerovit dealership guarantees genuine sanitaryware and faucets with manufacturer warranty, installation support, and access to the complete product range.',
     color: '#2C7BE5',
   },
 ]
@@ -30,16 +30,16 @@ const qualityPoints = [
   'Batch-tested granite and stone products',
   'ISI/BIS marked pipes and fittings',
   'Certified ceramic and vitrified tiles only',
-  'Proper invoicing and GST compliance on every purchase',
+  // 'Proper invoicing and GST compliance on every purchase',
 ]
 
 const rangePoints = [
-  '50+ granite varieties from South India and Rajasthan',
+  '5+ granite varieties from South India and Rajasthan',
   '500+ tile designs across all categories',
-  'Full bathroom solution — from basins to shower panels',
-  'Complete plumbing system — pipes, fittings, and accessories',
+  'Full bathroom solution from basins to shower panels',
+  'Complete plumbing system: pipes, fittings, and accessories',
   'All size variants available in stock',
-  'Custom orders and bulk procurement support',
+  'A one step shop for all your building material needs'
 ]
 
 export default function WhyChooseUs() {
@@ -47,10 +47,10 @@ export default function WhyChooseUs() {
     <>
       <SEOHead
         title="Why Choose Us"
-        description="Discover why Patel Building Materials is the most trusted building materials dealer in Ahmedabad — authorised dealerships, quality assurance, and customer-first service."
+        description="Discover why Pallavi Tiles is the most trusted building materials dealer in Sitamarhi — authorised dealerships, quality assurance, and customer-first service."
         keywords="why choose us, building materials dealer, quality assurance, kajaria authorized dealer, astral distributor"
-        ogTitle="Why Choose Us | Patel Building Materials"
-        ogDescription="Authorised dealerships, quality guarantee, and 25+ years of trusted service."
+        ogTitle="Why Choose Us | Pallavi Tiles"
+        ogDescription="Authorised dealerships, quality guarantee, and 13+ years of trusted service."
       />
 
       {/* Banner */}

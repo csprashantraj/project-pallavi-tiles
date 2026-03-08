@@ -17,18 +17,25 @@ export default function BrandStrip() {
               key={brand.id}
               className="flex flex-col items-center gap-1.5 group"
             >
-              {/* Logo placeholder — replace with <img> when real logo is available */}
-              <div
-                className="w-28 h-14 rounded-xl flex items-center justify-center px-3 border border-gray-100 shadow-sm group-hover:shadow-md transition-shadow"
-                style={{ backgroundColor: brand.color + '15', borderColor: brand.color + '30' }}
-              >
-                <span
-                  className="font-heading font-bold text-sm text-center leading-tight"
-                  style={{ color: brand.color }}
+              {brand.logo ? (
+                <img
+                  src={brand.logo}
+                  alt={brand.name}
+                  className="w-28 h-14 object-contain"
+                />
+              ) : (
+                <div
+                  className="w-28 h-14 rounded-xl flex items-center justify-center px-3 border border-gray-100 shadow-sm group-hover:shadow-md transition-shadow"
+                  style={{ backgroundColor: brand.color + '15', borderColor: brand.color + '30' }}
                 >
-                  {brand.name}
-                </span>
-              </div>
+                  <span
+                    className="font-heading font-bold text-sm text-center leading-tight"
+                    style={{ color: brand.color }}
+                  >
+                    {brand.name}
+                  </span>
+                </div>
+              )}
               <span
                 className="text-xs font-medium px-2 py-0.5 rounded-full"
                 style={{ backgroundColor: brand.color + '15', color: brand.color }}

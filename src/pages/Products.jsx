@@ -1,16 +1,16 @@
 /**
  * Products.jsx — Products page with category tabs / anchor sections
  */
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import SEOHead from '../components/SEOHead'
 import ProductCard from '../components/ProductCard'
 import { graniteProducts, tilesProducts, sanitarywareProducts, pipeFittingsProducts } from '../data/products'
 
 const TABS = [
-  { id: 'granite', label: 'Granite' },
   { id: 'tiles', label: 'Kajaria Tiles' },
   { id: 'sanitaryware', label: 'Sanitaryware & Faucets' },
   { id: 'pipes', label: 'Pipe Fittings' },
+  { id: 'granite', label: 'Granite' },
 ]
 
 function SectionHeader({ badge, title, subtitle }) {
@@ -30,14 +30,54 @@ function SectionHeader({ badge, title, subtitle }) {
 export default function Products() {
   const [activeTab, setActiveTab] = useState('granite')
 
+  // Scroll to hash on page load (when coming from other pages)
+  useEffect(() => {
+    const hash = window.location.hash.replace('#', '')
+    if (hash && ['granite', 'tiles', 'sanitaryware', 'pipes'].includes(hash)) {
+      setTimeout(() => {
+        const element = document.getElementById(hash)
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+          setActiveTab(hash)
+        }
+      }, 100)
+    }
+  }, [])
+
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: '-20% 0px -70% 0px',
+      threshold: 0
+    }
+
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveTab(entry.target.id)
+        }
+      })
+    }
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions)
+
+    // Observe all sections
+    TABS.forEach((tab) => {
+      const element = document.getElementById(tab.id)
+      if (element) observer.observe(element)
+    })
+
+    return () => observer.disconnect()
+  }, [])
+
   return (
     <>
       <SEOHead
         title="Products"
-        description="Browse our full range of building materials: premium granite, Kajaria tiles, Kervit sanitaryware & faucets, and Astral pipe fittings."
-        keywords="granite slabs, kajaria tiles, kervit sanitaryware, astral pipes, building materials products"
-        ogTitle="Products | Patel Building Materials"
-        ogDescription="Granite, Kajaria Tiles, Kervit Sanitaryware & Astral Pipes — all under one roof."
+        description="Browse our full range of building materials: premium granite, Kajaria tiles, Kerovit sanitaryware & faucets, and Astral pipe fittings."
+        keywords="granite slabs, kajaria tiles, kerovit sanitaryware, astral pipes"
+        ogTitle="Products | Pallavi Tiles"
+        ogDescription="Granite, Kajaria Tiles, Kerovit Sanitaryware & Astral Pipes — all under one roof."
       />
 
       {/* Banner */}
@@ -70,6 +110,36 @@ export default function Products() {
       </div>
 
       <div className="w-full px-4 sm:px-6 lg:px-8 py-12 space-y-20">
+        {/* ── Tiles ── */}
+        <section id="tiles">
+          <SectionHeader badge="Kajaria Prime Dealership" title="Kajaria Tiles" subtitle="India's No. 1 tile brand — floor, wall, vitrified & parking tiles" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {tilesProducts.map((p) => (
+              <ProductCard key={p.id} image={p.image} name={p.name} category={p.category} size={p.size} finish={p.finish} />
+            ))}
+          </div>
+        </section>
+
+        {/* ── Sanitaryware ── */}
+        <section id="sanitaryware">
+          <SectionHeader badge="Kerovit Authorized Dealer" title="Kerovit Sanitaryware & Faucets" subtitle="Kerovit brand — premium bathroom solutions" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {sanitarywareProducts.map((p) => (
+              <ProductCard key={p.id} image={p.image} name={p.name} category={p.category} description={p.description} />
+            ))}
+          </div>
+        </section>
+
+        {/* ── Pipes ── */}
+        <section id="pipes">
+          <SectionHeader badge="Astral Pipes Distributorship" title="Pipe Fittings" subtitle="CPVC, UPVC & SWR pipes for all plumbing needs" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {pipeFittingsProducts.map((p) => (
+              <ProductCard key={p.id} image={p.image} name={p.name} category={p.category} description={p.description} size={p.sizes} />
+            ))}
+          </div>
+        </section>
+
         {/* ── Granite ── */}
         <section id="granite">
           <SectionHeader title="Granite" subtitle="Sourced from South India and Rajasthan" />
@@ -78,7 +148,7 @@ export default function Products() {
             <h3 className="font-heading font-semibold text-brand-brown text-xl mb-4">
               South Indian Granite
             </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5">
               {graniteProducts.southIndian.map((p) => (
                 <ProductCard key={p.id} image={p.image} name={p.name} category={p.origin} finish={p.finish} />
               ))}
@@ -94,36 +164,6 @@ export default function Products() {
                 <ProductCard key={p.id} image={p.image} name={p.name} category={p.origin} finish={p.finish} />
               ))}
             </div>
-          </div>
-        </section>
-
-        {/* ── Tiles ── */}
-        <section id="tiles">
-          <SectionHeader badge="Kajaria Prime Dealership" title="Kajaria Tiles" subtitle="India's No. 1 tile brand — floor, wall, vitrified & parking tiles" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {tilesProducts.map((p) => (
-              <ProductCard key={p.id} image={p.image} name={p.name} category={p.category} size={p.size} finish={p.finish} />
-            ))}
-          </div>
-        </section>
-
-        {/* ── Sanitaryware ── */}
-        <section id="sanitaryware">
-          <SectionHeader title="Sanitaryware & Faucets" subtitle="Kervit brand — premium bathroom solutions" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {sanitarywareProducts.map((p) => (
-              <ProductCard key={p.id} image={p.image} name={p.name} category={p.category} description={p.description} />
-            ))}
-          </div>
-        </section>
-
-        {/* ── Pipes ── */}
-        <section id="pipes">
-          <SectionHeader badge="Astral Pipes Distributorship" title="Pipe Fittings" subtitle="CPVC, UPVC & SWR pipes for all plumbing needs" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {pipeFittingsProducts.map((p) => (
-              <ProductCard key={p.id} image={p.image} name={p.name} category={p.category} description={p.description} size={p.sizes} />
-            ))}
           </div>
         </section>
       </div>

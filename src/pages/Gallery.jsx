@@ -28,9 +28,9 @@ export default function Gallery() {
     <>
       <SEOHead
         title="Gallery"
-        description="Browse our gallery of installed granite, Kajaria tiles, Kervit sanitaryware, and Astral pipe projects."
+        description="Browse our gallery of installed granite, Kajaria tiles, Kerovit sanitaryware, and Astral pipe projects."
         keywords="gallery, granite photos, tiles installation, sanitaryware showroom"
-        ogTitle="Gallery | Patel Building Materials"
+        ogTitle="Gallery | Pallavi Tiles"
         ogDescription="See our completed projects and showroom display."
       />
 

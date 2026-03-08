@@ -35,25 +35,38 @@ export default function Contact() {
     if (errors[name]) setErrors((prev) => ({ ...prev, [name]: '' }))
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     const e2 = validate()
     if (Object.keys(e2).length > 0) {
       setErrors(e2)
       return
     }
-    // No backend — show success state
-    setSubmitted(true)
-    setForm({ name: '', phone: '', email: '', product: '', message: '' })
+    
+    // Submit to Web3Forms
+    const formData = new FormData(e.target)
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
+      })
+      
+      if (response.ok) {
+        setSubmitted(true)
+        setForm({ name: '', phone: '', email: '', product: '', message: '' })
+      }
+    } catch (error) {
+      console.error('Form submission error:', error)
+    }
   }
 
   return (
     <>
       <SEOHead
         title="Contact Us"
-        description="Get in touch with Patel Building Materials in Ahmedabad. Call, WhatsApp, or fill out our inquiry form for granite, tiles, sanitaryware, and pipe fittings."
-        keywords="contact building materials shop Ahmedabad, inquiry form, WhatsApp building materials"
-        ogTitle="Contact Us | Patel Building Materials"
+        description="Get in touch with Pallavi Tiles in Sitamarhi. Call, WhatsApp, or fill out our inquiry form for granite, tiles, sanitaryware, and pipe fittings."
+        keywords="contact building materials shop Sitamarhi, inquiry form, WhatsApp building materials"
+        ogTitle="Contact Us | Pallavi Tiles"
         ogDescription="Reach us by phone, WhatsApp, or our online inquiry form."
       />
 
@@ -152,6 +165,7 @@ export default function Contact() {
           ) : (
             <form onSubmit={handleSubmit} noValidate className="space-y-4">
               {/* Name */}
+              <input type="hidden" name="access_key" value={import.meta.env.VITE_WEB3FORMS_ACCESS_KEY} />
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Full Name *</label>
                 <input

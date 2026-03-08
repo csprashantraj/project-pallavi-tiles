@@ -7,6 +7,8 @@ import { useState, useEffect } from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 
+import logoImage from '../assets/images/logo.jpg'
+
 const navLinks = [
   { to: '/', label: 'Home' },
   { to: '/about', label: 'About Us' },
@@ -43,13 +45,23 @@ export default function Navbar() {
       <nav className="w-full px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 group">
-          <div className="w-9 h-9 rounded-full bg-brand-brown flex items-center justify-center">
-            <span className="text-brand-beige font-heading font-bold text-sm">PV</span>
-          </div>
-          <div className="leading-tight">
-            <p className="font-heading font-bold text-brand-brown text-base leading-4">Pallavi</p>
-            <p className="text-xs text-brand-gold font-medium tracking-wide">Tiles</p>
-          </div>
+          {logoImage ? (
+            <img 
+              src={logoImage} 
+              alt="Pallavi Tiles" 
+              className="h-16 w-auto object-contain"
+            />
+          ) : (
+            <>
+              <div className="w-9 h-9 rounded-full bg-brand-brown flex items-center justify-center">
+                <span className="text-brand-beige font-heading font-bold text-sm">PV</span>
+              </div>
+              <div className="leading-tight">
+                <p className="font-heading font-bold text-brand-brown text-base leading-4">Pallavi</p>
+                <p className="text-xs text-brand-gold font-medium tracking-wide">Tiles</p>
+              </div>
+            </>
+          )}
         </Link>
 
         {/* Desktop Links */}
@@ -79,7 +91,7 @@ export default function Navbar() {
 
         {/* Hamburger (mobile) */}
         <button
-          className="lg:hidden text-brand-dark p-2 rounded-md"
+          className="lg:hidden text-brand-brown hover:text-brand-gold bg-brand-beige p-2 rounded-md transition-colors"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle navigation"
         >

@@ -36,7 +36,7 @@ const galleryImages = [
     id: 5,
     src: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&h=600&fit=crop',
     thumb: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=400&h=300&fit=crop',
-    alt: 'Kervit wash basin',
+    alt: 'Kerovit wash basin',
     category: 'Sanitaryware',
   },
   {

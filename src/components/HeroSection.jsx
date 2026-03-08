@@ -59,7 +59,7 @@ export default function HeroSection() {
         >
           Your one-stop destination for premium Granite, Kajaria Tiles,
           Kerovit Sanitaryware &amp; Faucets, and Astral Pipe Fittings.
-          Serving the region with pride since 2000.
+          Serving the region with pride since 2013.
         </motion.p>
 
         {/* CTA Buttons */}

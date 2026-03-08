@@ -32,7 +32,7 @@ const offers = [
     badge: 'Limited Stock',
     badgeColor: 'bg-yellow-500',
     category: 'Sanitaryware',
-    title: 'Kervit Bathroom Combo Pack',
+    title: 'Kerovit Bathroom Combo Pack',
     description: 'Complete bathroom set: wall-hung basin + WC + shower panel at a bundled price.',
     discount: 'Bundle savings',
     validTill: '15 Apr 2026',

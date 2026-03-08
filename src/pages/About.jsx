@@ -6,16 +6,14 @@ import SEOHead from '../components/SEOHead'
 
 const values = [
   { Icon: Star, title: 'Quality', desc: 'We never compromise on the quality of materials we stock. Every product is sourced from verified manufacturers.' },
-  { Icon: Heart, title: 'Trust', desc: 'Over two decades of honest business dealings have built unshakeable trust with our clients.' },
+  { Icon: Heart, title: 'Trust', desc: 'Over one and half decade of honest business dealings have built unshakeable trust with our clients.' },
   { Icon: Layers, title: 'Variety', desc: '2,000+ products across 4 major categories means you will always find exactly what you need.' },
   { Icon: Headphones, title: 'Service', desc: 'From showroom consultation to after-sale support, our team is always here for you.' },
 ]
 
 const teamMembers = [
-  { name: 'Rameshbhai Patel', role: 'Founder & Owner', initials: 'RP' },
-  { name: 'Suresh Patel', role: 'Operations Manager', initials: 'SP' },
-  { name: 'Kavita Patel', role: 'Sales & Customer Relations', initials: 'KP' },
-  { name: 'Ankit Patel', role: 'Technical Advisor', initials: 'AP' },
+  { name: 'Rubi Devi', role: 'Proprietor', initials: 'RD' },
+  { name: 'Surendra Prasad', role: 'Founder and Operational Manager', initials: 'SP' }
 ]
 
 export default function About() {
@@ -23,17 +21,17 @@ export default function About() {
     <>
       <SEOHead
         title="About Us"
-        description="Learn about Patel Building Materials — a family-owned business with 25+ years of experience in granite, tiles, sanitaryware, and pipe fittings in Ahmedabad."
-        keywords="about Patel building materials, family business, building materials Ahmedabad, history"
-        ogTitle="About Us | Patel Building Materials"
-        ogDescription="25+ years of serving Gujarat with premium building materials."
+        description="Learn about Pallavi Tiles — a business with 13+ years of experience in granite, tiles, sanitaryware, and pipe fittings in Sitamarhi."
+        keywords="about Pallavi Tiles, business, building materials Sitamarhi, history"
+        ogTitle="About Us | Pallavi Tiles"
+        ogDescription="13+ years of serving Sitamarhi with premium building materials."
       />
 
       {/* Hero banner */}
       <div className="bg-brand-brown py-24 px-4 text-center mt-16">
         <p className="text-xs font-medium tracking-widest text-brand-beige uppercase mb-3">Our Story</p>
         <h1 className="font-heading text-4xl sm:text-5xl font-bold text-white mb-4">About Us</h1>
-        <p className="text-white/70 max-w-xl mx-auto">A family business rooted in values, built on relationships.</p>
+        <p className="text-white/70 max-w-xl mx-auto">Business rooted in values, built on relationships.</p>
       </div>
 
       {/* Story */}
@@ -46,14 +44,14 @@ export default function About() {
             </h2>
             <div className="space-y-4 text-gray-600 leading-relaxed">
               <p>
-                Patel Building Materials was founded in the year 2000 by Rameshbhai Patel with a small
-                granite trading business in Ahmedabad. What started as a single-room shop with a handful
+                Pallavi Tiles was founded in the year 2013 by Surendra Prasad and Rubi Devi with a small
+                granite trading business in Sitamarhi. What started as a single-floor shop with a handful
                 of granite samples has grown into one of the region's most comprehensive building materials
                 showrooms.
               </p>
               <p>
                 Driven by an unwavering commitment to quality and fair pricing, our family gradually
-                expanded into Kajaria tiles, Kervit sanitaryware, and Astral pipe fittings —
+                expanded into Kajaria tiles, Kerovit sanitaryware, and Astral pipe fittings —
                 becoming an authorised dealer and distributor for all three premium brands.
               </p>
               <p>
@@ -93,9 +91,9 @@ export default function About() {
             </div>
             <h3 className="font-heading text-2xl font-bold text-brand-brown mb-3">Our Vision</h3>
             <p className="text-gray-600 leading-relaxed">
-              To be the most trusted building materials partner in Gujarat — a name that
-              homeowners, architects, and contractors recommend without hesitation,
-              and a business our family is proud to pass on for generations.
+              To be the most trusted building materials partner in Sitamarhi, Bihar — a name that
+              homeowners, architects, and contractors recommend without hesitation 
+              because of our unwavering commitment to quality, integrity, and personalised service.
             </p>
           </div>
         </div>
