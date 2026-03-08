@@ -16,6 +16,7 @@
   "reactSnap": {
     "source": "dist",
     "port": 45679,
+    "skipThirdPartyRequests": true,
     "puppeteerArgs": [
       "--no-sandbox",
       "--disable-setuid-sandbox"
@@ -23,7 +24,10 @@
     "minifyHtml": {
       "collapseWhitespace": false,
       "removeComments": false
-    }
+    },
+    "exclude": [
+      "/contact"
+    ]
   },
   "dependencies": {
     "framer-motion": "^12.34.5",
